@@ -83,9 +83,6 @@ section{
         padding: 7px 40px 7px 10px;
     }
 }
-#iniciais {
-    background-color: black;
-}
 .pokelogo {
     background-color: #7a0c1f;
     align-items: center;
@@ -132,8 +129,9 @@ section{
   border-radius: 1%;
 }
 #planta h2 {
-    color: lime;
+    color: rgb(6, 202, 6);
     padding-left: 10px;
+    text-align: center;
 }
 
 #fogo {
@@ -152,6 +150,7 @@ section{
 #fogo h2 {
     color: rgba(252, 77, 14, 0.952);
     padding-left: 10px;
+    text-align: center;
 }
 
 #agua {
@@ -167,8 +166,9 @@ section{
   border-radius: 1%;
 }
 #agua h2 {
-    color: aqua;
+    color: rgb(6, 201, 201);
     padding-left: 10px;
+    text-align: center;
 }
 
 .video {
