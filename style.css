@@ -92,28 +92,17 @@ footer {
         padding: 7px 40px 7px 10px;
     }
 }
-.pokelogo {
-    background-color: #7a0c1f;
-    align-items: center;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    justify-content: center;
-}
-.pokelogo img {
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-/*#img-iniciais {
+
+/*Iniciais*/
+
+#img-iniciais {
     height: 750px;
-    background-image: url(imagens/3e01c1a63371be9cc52c1bc6d1f1c82f.jpg);
+    background-image: url(imagens/baixar-imagens-do-pokemon-e1456623612813.png.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}*/
+}
 .initials-txt {
     background-color: #e7e3cb;
     margin: 2% 2% 2% 0%;
@@ -123,6 +112,12 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
 }
+
+/*#initial-new {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}*/
+
 #initial-new img {
     width: 90%;
     height: 70%;
@@ -184,6 +179,8 @@ footer {
     text-align: center;
 }
 
+/*Fatos*/
+
 .video {
   margin-top: 30px; 
   text-align: center; 
@@ -218,6 +215,9 @@ footer {
     margin-right: 30px;
     margin-bottom: 20px;
 }
+
+/*Favoritos*/
+
 #imgSceptile,
 #imgKadabra,
 #imgHoopa,
@@ -228,7 +228,7 @@ footer {
 }
 #Sceptile {
     background-color: #81b485;
-    margin-top: 70px;
+    margin-top: 58px;
     padding: 20px 20px 10px 20px;
     overflow: auto;
 }
