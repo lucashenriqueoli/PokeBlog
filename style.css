@@ -216,6 +216,17 @@ footer {
     margin-bottom: 20px;
 }
 
+#pagina-fatos {
+    overflow: hidden;
+}
+
+#pagina-fatos footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 /*Favoritos*/
 
 #imgSceptile,
@@ -295,3 +306,31 @@ footer {
     color: #0057b8;
     text-shadow: 0 0 5px rgba(0, 87, 184, 0.3);
 }
+
+/*pagina principal*/
+
+  #posts-principais h1 {
+        text-align: center;
+        padding-top: 50px;
+        size: 5vh;
+  }
+  
+  #posts-principais .postagem {
+    width: 40%;
+    max-width: 400px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: inline-block;
+  }
+  
+  #posts-principais .postagem .titulo {
+    text-shadow: 1px 1px black;
+  }
+  
+  #posts-principais .postagem img {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border: 6px solid white;
+    margin-bottom: .5em;
+  }
