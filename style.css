@@ -2,22 +2,26 @@
     font-family: 'fonte pokemon';
     src: url(fontes/Pokemon\ Classic.ttf);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     height: 100vh;
     background: #e7e3cb;
 }
-p{
+
+p {
     color: rgb(31, 31, 31);
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     text-indent: 20px;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     position: fixed;
@@ -27,19 +31,22 @@ nav{
     background-color: #7a0c1f;
     padding: 7px 40px;
     border: 1px solid #7a0c1f;
-    box-shadow:  0 0 5px #7a0c1f, 0 0 10px #7a0c1f, 0 0 20px #7a0c1f;
+    box-shadow: 0 0 5px #7a0c1f, 0 0 10px #7a0c1f, 0 0 20px #7a0c1f;
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-nav ul li{
-    padding: 1vh;
+
+nav ul li {
+    padding: 2vh;
     margin-right: 1vh;
 }
+
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -47,31 +54,37 @@ nav ul li a {
     font-weight: 600;
     font-size: 14px;
 }
-nav ul li:hover{
+
+nav ul li:hover {
     scale: 1.2;
     font-weight: 700;
 }
-.imagem img{
+
+.imagem img {
     height: 6vh;
 }
-section{
+
+section {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
 }
-#sec1{
+
+#sec1 {
     background-image: url(imagens/my-desktop-wallpaper-every-pokemon-from-gen-1-3-v0-kWtagv6tE9HNJaOa1a4VjNbrc24RehnMImeZWQJyV4k.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-#sec2{
+
+#sec2 {
     background-color: #ffffff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+
 footer {
     height: 10%;
     background-color: #7a0c1f;
@@ -79,15 +92,18 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; 
+    text-align: center;
 }
-@media (max-width: 680px){
-    nav ul li a{
+
+@media (max-width: 680px) {
+    nav ul li a {
         font-size: 11px;
     }
+
     nav ul li {
         padding: 3px;
     }
+
     nav {
         padding: 7px 40px 7px 10px;
     }
@@ -103,11 +119,13 @@ footer {
     background-size: cover;
     background-attachment: fixed;
 }
+
 .initials-txt {
     background-color: #e7e3cb;
     margin: 2% 2% 2% 0%;
     border-radius: 5% 0% 5% 0%;
 }
+
 .initials-txt p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -124,6 +142,7 @@ footer {
     border-radius: 100%;
     margin: 2% 0% 2% 2%;
 }
+
 #planta {
     background-color: green;
     margin-left: 1%;
@@ -136,6 +155,7 @@ footer {
     max-height: 600px;
     border-radius: 1%;
 }
+
 #planta h2 {
     color: rgb(6, 202, 6);
     padding-left: 10px;
@@ -155,6 +175,7 @@ footer {
     max-height: 600px;
     border-radius: 1%;
 }
+
 #fogo h2 {
     color: rgba(252, 77, 14, 0.952);
     padding-left: 10px;
@@ -173,6 +194,7 @@ footer {
     max-height: 600px;
     border-radius: 1%;
 }
+
 #agua h2 {
     color: rgb(6, 201, 201);
     padding-left: 10px;
@@ -182,26 +204,42 @@ footer {
 /*Fatos*/
 
 .video {
-  margin-top: 30px; 
-  text-align: center; 
-  position: relative;
- 
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+
 }
- #titulo_fatos
-{
-  margin-top: 70px; 
-  text-align: center; 
-  color:  #7a0c1f; 
-  font-family: Arial, sans-serif;
-  position: block-;
+
+#titulo_fatos {
+    margin-top: 70px;
+    text-align: center;
+    color: #7a0c1f;
+    font-family: Arial, sans-serif;
+    position: block-;
 }
-#cabecalho_fatos{
+
+#cabecalho_fatos {
     margin-bottom: 70px;
 }
 
-#textos_fatos{
-    margin-right: 500px; 
-    margin-left: 500px;
+#textos_fatos {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+@media (max-width: 900px) {
+    #textos_fatos {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 733px) {
+    iframe {
+        width: 450px;
+        height: 253px;
+    }
 }
 
 .imagemEsquerda {
@@ -210,6 +248,7 @@ footer {
     margin-bottom: 20px;
     margin-right: 50px;
 }
+
 .imagemDireita {
     float: right;
     margin-right: 30px;
@@ -237,33 +276,39 @@ footer {
     height: auto;
     transition: transform 0.3s ease;
 }
+
 #Sceptile {
     background-color: #81b485;
     margin-top: 58px;
     padding: 20px 20px 10px 20px;
     overflow: auto;
 }
+
 #Kadabra {
     background-color: #cdb865;
     padding: 10px 20px 10px 100px;
     overflow: auto;
 }
+
 #Hoopa {
     background-color: #928b98;
     padding: 10px 20px;
     overflow: auto;
 }
+
 #Greninja {
     background-color: #7abfe2;
     padding: 10px 20px 10px 100px;
     overflow: auto;
 }
+
 #Sceptile,
 #Kadabra,
 #Hoopa,
 #Greninja {
-    font-size: 20px;   
+    font-size: 20px;
 }
+
 #Sceptile h2,
 #Kadabra h2,
 #Hoopa h2,
@@ -271,37 +316,44 @@ footer {
     margin-top: 50px;
     transition: all 0.3s ease;
 }
+
 #Sceptile h2:hover,
 #Kadabra h2:hover,
 #Hoopa h2:hover,
 #Greninja h2:hover {
     transform: translateX(8px);
 }
+
 #Sceptile ul,
 #Kadabra ul,
 #Hoopa ul,
 #Greninja ul {
     margin-top: 10px;
 }
+
 #imgSceptile:hover,
 #imgKadabra:hover,
 #imgHoopa:hover,
 #imgGreninja:hover {
     transform: scale(1.1);
-    filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
 }
+
 #Sceptile h2:hover {
     color: #1f6b2a;
     text-shadow: 0 0 5px rgba(31, 107, 42, 0.3);
 }
+
 #Kadabra h2:hover {
     color: #896300;
     text-shadow: 0 0 5px rgba(184, 134, 11, 0.3);
 }
+
 #Hoopa h2:hover {
     color: #6a0dad;
     text-shadow: 0 0 5px rgba(106, 13, 173, 0.3);
 }
+
 #Greninja h2:hover {
     color: #0057b8;
     text-shadow: 0 0 5px rgba(0, 87, 184, 0.3);
@@ -309,28 +361,76 @@ footer {
 
 /*pagina principal*/
 
-  #posts-principais h1 {
-        text-align: center;
-        padding-top: 50px;
-        size: 5vh;
-  }
-  
-  #posts-principais .postagem {
-    width: 40%;
-    max-width: 400px;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    display: inline-block;
-  }
-  
-  #posts-principais .postagem .titulo {
-    text-shadow: 1px 1px black;
-  }
-  
-  #posts-principais .postagem img {
+#sec2 h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+#posts-principais {
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+#posts-principais .postagem {
+    position: relative;
+    width: 600px;
+    overflow: hidden;
+}
+@media (max-width: 1334px) {
+    #posts-principais .postagem {
+        width: 450px;
+    }
+}
+@media (max-width: 990px) {
+    #posts-principais .postagem {
+        width: 350px;
+    }
+}
+
+@media (max-width: 770px) {
+    #posts-principais .postagem {
+        width: 250px;
+        padding-top: 10px;
+    }
+}
+
+#posts-principais .postagem .titulo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+#posts-principais .postagem img {
     width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
-    border: 6px solid white;
-    margin-bottom: .5em;
-  }
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.postagem::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0.8), transparent);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+#posts-principais .postagem:hover::after,
+#posts-principais .postagem:hover .titulo {
+    opacity: 1;
+}
