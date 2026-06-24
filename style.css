@@ -93,6 +93,16 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: fonte pokemon, Helvetica, sans-serif;
+    font-size: small;
+    box-shadow: 0 0 5px #7a0c1f, 0 0 10px #7a0c1f, 0 0 20px #7a0c1f;
+}
+
+footer p {
+    color: #ffffff;
+    font-family: fonte pokemon, Helvetica, sans-serif;
+    font-size: small;
+    overflow-wrap: break-word;
 }
 
 @media (max-width: 680px) {
@@ -136,11 +146,20 @@ footer {
     grid-template-columns: 2fr 2fr;
 }*/
 
+#initial-new {
+    background-image: url(imagens/my-desktop-wallpaper-every-pokemon-from-gen-1-3-v0-kWtagv6tE9HNJaOa1a4VjNbrc24RehnMImeZWQJyV4k.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
 #initial-new img {
     width: 90%;
     height: 70%;
     border-radius: 100%;
     margin: 2% 0% 2% 2%;
+    transition: transform 0.3s ease;
 }
 
 #planta {
@@ -334,7 +353,8 @@ footer {
 #imgSceptile:hover,
 #imgKadabra:hover,
 #imgHoopa:hover,
-#imgGreninja:hover {
+#imgGreninja:hover,
+#initial-new img:hover {    
     transform: scale(1.1);
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
 }
