@@ -89,22 +89,6 @@ section {
     height: 70vh;
 }
 
-#sec1 {
-    background-image: url(imagens/my-desktop-wallpaper-every-pokemon-from-gen-1-3-v0-kWtagv6tE9HNJaOa1a4VjNbrc24RehnMImeZWQJyV4k.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#sec2 {
-    background-color: #ffffff;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 footer {
     flex-shrink: 0;
     height: 10%;
@@ -425,6 +409,7 @@ a:hover{
     position: relative;
     max-width: 100%;
     box-sizing: border-box;
+    margin: 50px 50px;
 }
 
 @media (max-width: 1334px) {
@@ -470,7 +455,7 @@ a:hover{
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0.8), transparent);
+    background: linear-gradient(to top, #2a5364bd, transparent);
     opacity: 0;
     transition: 0.3s;
     z-index: 1;
@@ -480,3 +465,32 @@ a:hover{
 #posts-principais .postagem:hover h2 {
     opacity: 1;
 }
+
+#sec1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(imagens/my-desktop-wallpaper-every-pokemon-from-gen-1-3-v0-kWtagv6tE9HNJaOa1a4VjNbrc24RehnMImeZWQJyV4k.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec1 img {
+    width: 700px;
+    height: auto;
+}
+
+#sec2 {
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#videoyoutube img {
+    object-fit: cover;
+    object-position: left;
+}
+
