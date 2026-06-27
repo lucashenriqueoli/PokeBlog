@@ -165,7 +165,7 @@ nav ul li:hover {
 }
 
 #planta {
-    background-color: rgb(100, 173, 4);
+    background-color: #6b9a73;
 }
 
 #planta h2 {
@@ -174,20 +174,20 @@ nav ul li:hover {
 }
 
 #fogo {
-    background-color: rgb(233, 106, 22);
+    background-color: #e27e4d;
 }
 
 #fogo h2 {
-    color: rgba(172, 48, 3, 0.952);
+    color: rgb(182, 8, 8);
     text-align: center;
 }
 
 #agua {
-    background-color: rgb(9, 168, 207);
+    background-color: #90c7d6;
 }
 
 #agua h2 {
-    color: rgb(0, 94, 94);
+    color: rgb(8, 99, 99);
     text-align: center;
 }
 
@@ -197,7 +197,7 @@ nav ul li:hover {
 }
 
 #pikachu h2 {
-    color: orange;
+    color: rgb(255, 0, 0);
     text-align: center;
 }
 
