@@ -395,9 +395,7 @@ a:hover{
     text-align: center;
     align-items: stretch;
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    gap: 2%;
     padding: 0 20px;
     box-sizing: border-box;
     flex: 1;
@@ -409,7 +407,6 @@ a:hover{
     position: relative;
     max-width: 100%;
     box-sizing: border-box;
-    margin: 50px 50px;
 }
 
 @media (max-width: 1334px) {
@@ -494,3 +491,7 @@ a:hover{
     object-position: left;
 }
 
+#posts-principais a {
+    margin-left: 100px;
+    margin-right: 100px;
+}
