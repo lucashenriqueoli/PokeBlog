@@ -3,6 +3,9 @@
     src: url(fontes/Pokemon\ Classic.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -144,7 +147,6 @@ nav ul li:hover {
 }
 
 .initials-txt p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
 }
 
@@ -205,6 +207,12 @@ nav ul li:hover {
     width: 70%;
     height: 90%;
 }
+#initials h2, p {
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 /*Fatos*/
 
@@ -337,8 +345,11 @@ a:hover{
 #Kadabra h2,
 #Hoopa h2,
 #Greninja h2 {
-    margin-top: 50px;
+    margin-top: 30px;
     transition: all 0.3s ease;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #Sceptile h2:hover,
@@ -384,6 +395,13 @@ a:hover{
     color: #0057b8;
     text-shadow: 0 0 5px rgba(0, 87, 184, 0.3);
 }
+
+#principal h2:hover, li{
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 /*pagina principal*/
 
@@ -512,3 +530,16 @@ a:hover{
 #postagem a {
     aspect-ratio: 4/3;
 }
+
+.postagem h2{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 3vh;
+  }
+  #sec2 h1 {
+    font-family: "Indie Flower", cursive;
+    font-weight: 10000;
+    font-size: 5vh;
+    color: #194457;
+  }
+  
