@@ -40,10 +40,6 @@ p {
     text-indent: 20px;
 }
 
-main {
-    flex: 1;
-}
-
 .imagem img {
     height: 6vh;
 }
