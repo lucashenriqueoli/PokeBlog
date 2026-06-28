@@ -1,10 +1,10 @@
+/*Geral*/
+
 @font-face {
     font-family: 'fonte pokemon';
     src: url(fontes/Pokemon\ Classic.ttf);
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
 
 * {
     margin: 0;
@@ -26,16 +26,12 @@ body {
 
 main {
     flex: 1 0 auto;
-}
-
-#initials {
     padding-top: 4%;
-}
+} /*especificar cada padding-top*/
 
 p {
     color: rgb(31, 31, 31);
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     text-indent: 20px;
 }
@@ -72,7 +68,6 @@ footer p {
     overflow-wrap: break-word;
 }
 
-/*barra de navegação*/
 nav {
     display: flex;
     align-items: center;
@@ -112,111 +107,7 @@ nav ul li:hover {
     scale: 1.2;
     font-weight: 700;
 }
-@media (max-width: 680px) {
-    nav ul li a {
-        font-size: 11px;
-    }
 
-    nav ul li {
-        padding: 3px;
-    }
-
-    nav {
-        padding: 0.5rem 2.5rem 0.5rem 0.6rem;
-    }
-}
-
-/*Iniciais*/
-
-#img-iniciais {
-    height: 750px;
-    background-image: url(imagens/baixar-imagens-do-pokemon-e1456623612813.png.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.initials-txt {
-    margin: 2% 2% 2% 0%;
-    border-radius: 5% 0% 5% 0%;
-}
-
-.initials-txt p {
-    font-size: 1.2rem;
-}
-
-#initial-new img {
-    width: 90%;
-    height: 70%;
-    margin: 2% 0% 2% 2%;
-    transition: transform 0.3s ease;
-}
-
-#planta,
-#fogo,
-#agua,
-#pikachu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#planta {
-    background-color: #6b9a73;
-}
-
-#planta h2 {
-    color: rgb(0, 78, 0);
-    text-align: center;
-}
-
-#fogo {
-    background-color: #e27e4d;
-}
-
-#fogo h2 {
-    color: rgb(182, 8, 8);
-    text-align: center;
-}
-
-#agua {
-    background-color: #90c7d6;
-}
-
-#agua h2 {
-    color: rgb(8, 99, 99);
-    text-align: center;
-}
-
-#pikachu {
-    background-color: yellow;
-    min-height: 100vh;
-}
-
-#pikachu h2 {
-    color: rgb(255, 0, 0);
-    text-align: center;
-}
-
-#pikachu img {
-    width: 70%;
-    height: 90%;
-}
-#initials h2, p {
-    font-family: "Viga", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
-/*Fatos*/
-
-#linkVideo{
-    padding-top: 5%;
-    text-align: center;
-}
-    
 a:link{
     color: #c92540;
     text-align: center;
@@ -234,172 +125,21 @@ a:hover{
     text-align: center;
 }
 
-.video {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-    position: relative;
-}
+@media (max-width: 680px) {
+    nav ul li a {
+        font-size: 11px;
+    }
 
+    nav ul li {
+        padding: 3px;
+    }
 
-#titulo_fatos {
-    margin-top: 5%;
-    text-align: center;
-    color: #7a0c1f;
-    font-family: Arial, sans-serif;
-    position: relative;
-}
-
-#cabecalho_fatos {
-    margin-bottom: 70px;
-    position: relative;
-}
-
-#textos_fatos {
-    margin-right: 20%;
-    margin-left: 20%;
-}
-
-@media (max-width: 900px) {
-    #textos_fatos {
-        margin-right: 10%;
-        margin-left: 10%;
+    nav {
+        padding: 0.5rem 2.5rem 0.5rem 0.6rem;
     }
 }
 
-@media (max-width: 733px) {
-    iframe {
-        max-width: 100%;
-        height: 250px;
-    }
-}
-
-.imagemEsquerda {
-    float: left;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    margin-right: 50px;
-}
-
-.imagemDireita {
-    float: right;
-    margin-right: 30px;
-    margin-bottom: 20px;
-}
-
-#pagina-fatos footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    position: relative;
-}
-/*Favoritos*/
-
-#imgSceptile,
-#imgKadabra,
-#imgHoopa,
-#imgGreninja {
-    width: 300px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-#Sceptile {
-    background-color: #81b485;
-    margin-top: 58px;
-    padding: 20px 20px 10px 20px;
-    overflow: auto;
-}
-
-#Kadabra {
-    background-color: #cdb865;
-    padding: 10px 20px 10px 100px;
-    overflow: auto;
-}
-
-#Hoopa {
-    background-color: #928b98;
-    padding: 10px 20px;
-    overflow: auto;
-}
-
-#Greninja {
-    background-color: #7abfe2;
-    padding: 10px 20px 10px 100px;
-    overflow: auto;
-}
-
-#Sceptile,
-#Kadabra,
-#Hoopa,
-#Greninja {
-    font-size: 20px;
-}
-
-#Sceptile h2,
-#Kadabra h2,
-#Hoopa h2,
-#Greninja h2 {
-    margin-top: 30px;
-    transition: all 0.3s ease;
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-#Sceptile h2:hover,
-#Kadabra h2:hover,
-#Hoopa h2:hover,
-#Greninja h2:hover {
-    transform: translateX(8px);
-}
-
-#Sceptile ul,
-#Kadabra ul,
-#Hoopa ul,
-#Greninja ul {
-    margin-top: 10px;
-}
-
-#imgSceptile:hover,
-#imgKadabra:hover,
-#imgHoopa:hover,
-#imgGreninja:hover,
-#initial-new img:hover,
-#pikachu img:hover {    
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
-}
-
-#Sceptile h2:hover {
-    color: #1f6b2a;
-    text-shadow: 0 0 5px rgba(31, 107, 42, 0.3);
-}
-
-#Kadabra h2:hover {
-    color: #896300;
-    text-shadow: 0 0 5px rgba(184, 134, 11, 0.3);
-}
-
-#Hoopa h2:hover {
-    color: #6a0dad;
-    text-shadow: 0 0 5px rgba(106, 13, 173, 0.3);
-}
-
-#Greninja h2:hover {
-    color: #0057b8;
-    text-shadow: 0 0 5px rgba(0, 87, 184, 0.3);
-}
-
-#principal h2:hover, li{
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
-/*pagina principal*/
+/*Página Principal*/
 
 #sec2 h1 {
     text-align: center;
@@ -512,6 +252,7 @@ a:hover{
     background-size: cover;
     background-attachment: fixed;
 }
+
 #videoyoutube img {
     object-fit: cover;
     object-position: left;
@@ -523,6 +264,7 @@ a:hover{
     display: block;
     height: auto;
 }
+
 #postagem a {
     aspect-ratio: 4/3;
 }
@@ -531,11 +273,266 @@ a:hover{
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     font-size: 3vh;
-  }
-  #sec2 h1 {
+}
+
+#sec2 h1 {
     font-family: "Indie Flower", cursive;
     font-weight: 10000;
     font-size: 5vh;
     color: #194457;
-  }
-  
+}
+
+/*Iniciais*/
+
+#initial-new {
+    padding-top: 4%;
+}
+
+#img-iniciais {
+    height: 750px;
+    background-image: url(imagens/baixar-imagens-do-pokemon-e1456623612813.png.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.initials-txt {
+    margin: 2% 2% 2% 0%;
+    border-radius: 5% 0% 5% 0%;
+}
+
+.initials-txt p {
+    font-size: 1.2rem;
+}
+
+#initial-new img {
+    width: 90%;
+    height: 70%;
+    margin: 2% 0% 2% 2%;
+    transition: transform 0.3s ease;
+}
+
+#planta,
+#fogo,
+#agua,
+#pikachu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#planta {
+    background-color: #6b9a73;
+}
+
+#planta h2 {
+    color: rgb(0, 78, 0);
+    text-align: center;
+}
+
+#fogo {
+    background-color: #e27e4d;
+}
+
+#fogo h2 {
+    color: rgb(182, 8, 8);
+    text-align: center;
+}
+
+#agua {
+    background-color: #90c7d6;
+}
+
+#agua h2 {
+    color: rgb(8, 99, 99);
+    text-align: center;
+}
+
+#pikachu {
+    background-color: yellow;
+    min-height: 100vh;
+}
+
+#pikachu h2 {
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+#pikachu img {
+    width: 60%;
+    height: 80%;
+}
+
+#initials h2, p {
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Fatos*/
+
+#linkVideo{
+    padding-top: 5%;
+    text-align: center;
+}
+
+.video {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#titulo_fatos {
+    margin-top: 5%;
+    text-align: center;
+    color: #7a0c1f;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+#textos_fatos {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+@media (max-width: 900px) {
+    #textos_fatos {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 733px) {
+    iframe {
+        max-width: 100%;
+        height: 250px;
+    }
+}
+
+#pagina-fatos footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+
+/*Favoritos*/
+
+#imgSceptile,
+#imgKadabra,
+#imgHoopa,
+#imgGreninja {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.imagemEsquerda {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.imagemDireita {
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+#Sceptile {
+    background-color: #81b485;
+    margin-top: 58px;
+    padding: 20px 20px 10px 20px;
+    overflow: auto;
+}
+
+#Kadabra {
+    background-color: #cdb865;
+    padding: 10px 20px 10px 100px;
+    overflow: auto;
+}
+
+#Hoopa {
+    background-color: #928b98;
+    padding: 10px 20px;
+    overflow: auto;
+}
+
+#Greninja {
+    background-color: #7abfe2;
+    padding: 10px 20px 10px 100px;
+    overflow: auto;
+}
+
+#Sceptile,
+#Kadabra,
+#Hoopa,
+#Greninja {
+    font-size: 20px;
+}
+
+#Sceptile h2,
+#Kadabra h2,
+#Hoopa h2,
+#Greninja h2 {
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#Sceptile h2:hover,
+#Kadabra h2:hover,
+#Hoopa h2:hover,
+#Greninja h2:hover {
+    transform: translateX(8px);
+}
+
+#Sceptile ul,
+#Kadabra ul,
+#Hoopa ul,
+#Greninja ul {
+    margin-top: 10px;
+}
+
+#imgSceptile:hover,
+#imgKadabra:hover,
+#imgHoopa:hover,
+#imgGreninja:hover,
+#initial-new img:hover,
+#pikachu img:hover {    
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+} /*Usado para imagens da página de iniciais também!*/
+
+#Sceptile h2:hover {
+    color: #1f6b2a;
+    text-shadow: 0 0 5px rgba(31, 107, 42, 0.3);
+}
+
+#Kadabra h2:hover {
+    color: #896300;
+    text-shadow: 0 0 5px rgba(184, 134, 11, 0.3);
+}
+
+#Hoopa h2:hover {
+    color: #6a0dad;
+    text-shadow: 0 0 5px rgba(106, 13, 173, 0.3);
+}
+
+#Greninja h2:hover {
+    color: #0057b8;
+    text-shadow: 0 0 5px rgba(0, 87, 184, 0.3);
+}
+
+#principal h2:hover, li{
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Informações*/
