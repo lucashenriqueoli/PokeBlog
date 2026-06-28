@@ -26,8 +26,7 @@ body {
 
 main {
     flex: 1 0 auto;
-    padding-top: 4%;
-} /*especificar cada padding-top*/
+}
 
 p {
     color: rgb(31, 31, 31);
@@ -70,6 +69,7 @@ footer p {
 
 nav {
     display: flex;
+    height: 8%;
     align-items: center;
     position: fixed;
     top: 0;
@@ -125,6 +125,13 @@ a:hover{
     text-align: center;
 }
 
+#inPrincipal {
+    text-decoration: underline;
+}
+#inInformations {
+    text-decoration: underline;
+}
+
 @media (max-width: 680px) {
     nav ul li a {
         font-size: 11px;
@@ -140,6 +147,10 @@ a:hover{
 }
 
 /*Página Principal*/
+
+#principal {
+    padding-top: 4%;
+}
 
 #sec2 h1 {
     text-align: center;
@@ -420,6 +431,10 @@ a:hover{
 
 /*Favoritos*/
 
+#favoritos {
+    padding-top: 0;
+}
+
 #imgSceptile,
 #imgKadabra,
 #imgHoopa,
@@ -536,3 +551,47 @@ a:hover{
 }
 
 /*Informações*/
+
+#informations {
+    padding-top: 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    background-color: rgb(24, 23, 23);
+}
+
+#informations section {
+    flex: 1;
+    text-align: center;
+    height: 95%;
+    overflow: auto;
+}
+
+#informations img {
+    height: 50%;
+    width: 80%;
+}
+
+#autors {
+    margin-left: 2%;
+    background-color: #73b4dd;
+}
+#autors h2 {
+    color: #0b4f69;
+}
+
+#recomendations {
+    background-color: #fed87c;
+}
+#recomendations h2 {
+    color: rgb(104, 104, 5);
+}
+
+#credits {
+    margin-right: 2%;
+    background-color: #f4816b;
+}
+#credits h2 {
+    color: rgb(172, 1, 1);
+}
+
