@@ -476,7 +476,7 @@ a:hover{
 }
 
 #sec1 {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(imagens/my-desktop-wallpaper-every-pokemon-from-gen-1-3-v0-kWtagv6tE9HNJaOa1a4VjNbrc24RehnMImeZWQJyV4k.webp);
+    background-image: url(imagens/b60zt0bhn0ga1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -492,7 +492,7 @@ a:hover{
 }
 
 #sec2 {
-    background-color: #ffffff;
+    background-image: url(imagens/vector-DEC-2020-12_generated.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
