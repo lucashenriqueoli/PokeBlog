@@ -159,25 +159,26 @@ a:hover{
 
 #posts-principais {
     text-align: center;
-    align-items: stretch;
+    align-items: center;
     display: flex;
     width: 100%;
     padding: 0 1.2rem;
     box-sizing: border-box;
     flex: 1;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 30px;
 }
 
 .postagem {
-    flex: 1 1 300px;
+    flex: 1;
     position: relative;
-    max-width: 70vw;
-    height: 35vh;
     aspect-ratio: 4/3;
-    box-sizing: border-box;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    width: 400px;
+    border-radius: 20px;
 }
 
 @media (max-width: 1360px) {
@@ -214,12 +215,15 @@ a:hover{
     opacity: 0;
     transition: 0.3s;
     z-index: 2;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 3vh;
 }
 
 .postagem img {
     width: 100%;
     height: 100%;
-    aspect-ratio: 4 / 3;
+    object-fit: cover;
     display: block;
 }
 
@@ -238,10 +242,13 @@ a:hover{
 #posts-principais .postagem:hover::after,
 #posts-principais .postagem:hover h2 {
     opacity: 1;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 3vh;
 }
 
 #sec1 {
-    background-image: url(imagens/b60zt0bhn0ga1.png);
+    background-image: url(imagens/pokemon-anniversary-wallpaper-5120x1440-v0-2zl712jin0ga1.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -251,47 +258,43 @@ a:hover{
     align-items: center;
 }
 
-#sec1 img {
-    width: 30vwvw;
-    height: auto;
-}
+
 
 #sec2 {
-    background-image: url(imagens/vector-DEC-2020-12_generated.jpg);
+    background-image: linear-gradient(to right, #fffd8e, #f7f566, #fffd8e);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-#videoyoutube img {
-    object-fit: cover;
-    object-position: left;
-}
-
-#imagem-iniciais img{
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    height: auto;
-}
-
-#postagem a {
-    aspect-ratio: 4/3;
-}
-
-.postagem h2{
-    font-family: "Quicksand", sans-serif;
-    font-weight: 700;
-    font-size: 3vh;
-}
-
 #sec2 h1 {
     font-family: "Indie Flower", cursive;
     font-weight: 10000;
     font-size: 5vh;
-    color: #194457;
+    color: #1d1358;
 }
+#posts-principais a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postagem a::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postagem article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
 
 /*Iniciais*/
 
