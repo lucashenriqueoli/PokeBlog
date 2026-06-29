@@ -305,11 +305,17 @@ a:hover{
 
 #initial-new {
         padding-top: 4%;
-    }
+}
+
+#initials-title {
+    background-color: rgb(161, 30, 30);
+    color: white;
+    text-align: center;
+}
 
 @media (max-width: 1500px) {
     #initial-new {
-        padding-top: calc(6.5vh + 20px);
+        padding-top: calc(6.77vh + 20px);
     }
 }
 @media (max-width: 1250px) {
@@ -319,8 +325,8 @@ a:hover{
 }
 
 @media (max-width: 1000px) {
-    #initial-new {
-        padding-top: calc(7vh + 25px);
+    #initial-new section {
+        flex-direction: column;
     }
 }
 
@@ -424,8 +430,6 @@ a:hover{
     font-weight: 400;
     font-style: normal;
 }
-
-
 
 /*Fatos*/
 
@@ -598,13 +602,13 @@ a:hover{
 
 /*Informações*/
 
-
 #informations {
     padding-top: 8%;
-    display: flex;
-    justify-content: space-between;
-    gap: 10%;
-    background-color: rgb(24, 23, 23);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    background-image: linear-gradient(to right, rgb(32, 31, 31), rgb(73, 63, 63));
+    overflow: hidden;
 }
 
 #informations section {
@@ -612,6 +616,7 @@ a:hover{
     text-align: center;
     height: 95%;
     overflow: auto;
+    border: 1px solid black;
 }
 
 #informations img {
