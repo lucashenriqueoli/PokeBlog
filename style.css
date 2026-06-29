@@ -154,49 +154,60 @@ a:hover{
 
 #sec2 h1 {
     text-align: center;
+    margin-bottom: 10px;
     padding-top: 2.0rem;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #2e4f91;
 }
 
 #posts-principais {
     text-align: center;
-    align-items: center;
+    align-items: flex-start;
+    align-content: flex-start;
     display: flex;
     width: 100%;
+    max-width: 1300px;
     padding: 0 1.2rem;
     box-sizing: border-box;
     flex: 1;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
     padding-top: 30px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 10px;
+    column-gap: 60px;
+    row-gap: 24px;
 }
 
 .postagem {
-    flex: 1;
     position: relative;
     aspect-ratio: 4/3;
     overflow: hidden;
     text-decoration: none;
     color: inherit;
-    width: 400px;
+    width: 350px;
+    max-width: 100%;
     border-radius: 20px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 1360px) {
     #sec2 {
-        height: 120vh;
+        height: auto;
+        padding-bottom: 50px;
     }
-    #posts-principais {
-        flex-direction: column;
     }
     #sec1 img {
         width: 60vw;
     }
-}
+    .postagem h2 {
+        font-size: clamp(14px, 2vw, 28px);
+    }
 
 @media (max-width: 990px) {
-    .postagem {
-        padding-top: 10px;
-    }
     #posts-principais .postagem::after,
     #posts-principais .postagem h2 {
     opacity: 1;
@@ -212,12 +223,14 @@ a:hover{
     left: 10px;
     right: 10px;
     color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 6px rgb(0, 0, 0);
     opacity: 0;
     transition: 0.3s;
     z-index: 2;
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
-    font-size: 3vh;
+    font-size: clamp(30px, 1.6vw, 50px);
+    padding: 10px 15px 10px 15px;
 }
 
 .postagem img {
@@ -231,7 +244,7 @@ a:hover{
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, #2a5364bd, transparent);
+    background: linear-gradient(to top, #172244bd, transparent);
     opacity: 0;
     transition: 0.3s;
     z-index: 1;
@@ -244,7 +257,6 @@ a:hover{
     opacity: 1;
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
-    font-size: 3vh;
 }
 
 #sec1 {
@@ -266,14 +278,11 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#sec2 h1 {
-    font-family: "Indie Flower", cursive;
-    font-weight: 10000;
-    font-size: 5vh;
-    color: #1d1358;
-}
 #posts-principais a {
     display: flex;
     justify-content: center;
