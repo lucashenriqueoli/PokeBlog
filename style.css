@@ -63,13 +63,13 @@ footer {
 footer p {
     color: #ffffff;
     font-family: fonte pokemon, Helvetica, sans-serif;
-    font-size: small;
+    font-size: smaller;
     overflow-wrap: break-word;
 }
 
 nav {
     display: flex;
-    height: 8%;
+    height: 45px;
     align-items: center;
     position: fixed;
     top: 0;
@@ -267,8 +267,6 @@ a:hover{
     align-items: center;
 }
 
-
-
 #sec2 {
     background-image: linear-gradient(to right, #fffd8e, #f7f566, #fffd8e);
     background-position: center;
@@ -303,25 +301,27 @@ a:hover{
     height: 100%;
 }
 
-
 /*Iniciais*/
 
 #initial-new {
-    padding-top: 4%;
+        padding-top: 4%;
+    }
+
+@media (max-width: 1500px) {
+    #initial-new {
+        padding-top: calc(6.5vh + 20px);
+    }
+}
+@media (max-width: 1250px) {
+    #initial-new {
+        padding-top: calc(8.3vh + 20px);
+    }
 }
 
-#img-iniciais {
-    height: 750px;
-    background-image: url(imagens/baixar-imagens-do-pokemon-e1456623612813.png.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.initials-txt {
-    margin: 2% 2% 2% 0%;
-    border-radius: 5% 0% 5% 0%;
+@media (max-width: 1000px) {
+    #initial-new {
+        padding-top: calc(7vh + 25px);
+    }
 }
 
 .initials-txt p {
@@ -339,6 +339,7 @@ a:hover{
 #fogo,
 #agua,
 #pikachu {
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -380,8 +381,22 @@ a:hover{
     min-height: 100vh;
 }
 
+#pikachu-txt {
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 5% 5% 5% 5%;
+}
+
+#pikachu p {
+    color: rgb(0, 0, 0);
+}
+
 #pikachu h2 {
-    color: rgb(182, 182, 13);
+    color: rgb(167, 5, 5);
+    text-align: center;
+}
+
+#pikachu h1 {
+    color: rgb(182, 13, 13);
     text-align: center;
 }
 
@@ -394,17 +409,17 @@ a:hover{
     #pikachu {
         background-position: right;
         flex-direction: column;
-        padding-top: 8%;
+        padding-top: 20%;
     }
 }
 
-#initials h2, p {
+#initials h1, h2, p {
     font-family: "Viga", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-#pikachu h2, p {
+#pikachu h1, h2, p {
     font-family: "Viga", sans-serif;
     font-weight: 400;
     font-style: normal;
