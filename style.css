@@ -22,6 +22,7 @@ body {
     background: #e7e3cb;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 main {
@@ -647,3 +648,9 @@ a:hover{
     color: rgb(172, 1, 1);
 }
 
+#pokemon {
+    position: absolute;
+    width: 100px;
+    cursor: pointer; /* Mostra a mãozinha indicando que dá para clicar */
+    transition: transform 0.2s; /* Suaviza a virada */
+}
