@@ -487,72 +487,69 @@ a:hover{
 /*Favoritos*/
 
 #favoritos {
-    padding-top: 50px;
+    padding-top: 50px; 
 }
 
-#imgSceptile,
-#imgKadabra,
-#imgHoopa,
+#Sceptile, 
+#Kadabra, 
+#Hoopa, 
+#Greninja {
+    display: grid;
+    grid-template-columns: 380px 1fr; 
+    align-items: center;
+    gap: 5px 50px; 
+    padding: 40px 60px; 
+    font-size: 26px; 
+    box-sizing: border-box;
+}
+
+#Sceptile { background-color: #81b485; margin-top: 13px; }
+#Kadabra  { background-color: #cdb865; }
+#Hoopa    { background-color: #928b98; }
+#Greninja { background-color: #7abfe2; }
+
+#Sceptile figure,
+#Kadabra figure, 
+#Hoopa figure, 
+#Greninja figure {
+    grid-row: 1 / 3; 
+}
+
+#Kadabra, 
+#Greninja {
+    grid-template-columns: 1fr 380px; 
+}
+#Kadabra figure, 
+#Greninja figure {
+    grid-column: 2; 
+}
+#Kadabra h2, 
+#Kadabra ul, 
+#Greninja h2, 
+#Greninja ul {
+    grid-column: 1; 
+    text-align: left;
+}
+
+#imgSceptile, 
+#imgKadabra, 
+#imgHoopa, 
 #imgGreninja {
-    width: 300px;
+    width: 380px; 
     height: auto;
     transition: transform 0.3s ease;
 }
 
-.imagemEsquerda {
-    float: left;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    margin-right: 50px;
-}
-
-.imagemDireita {
-    float: right;
-    margin-right: 30px;
-    margin-bottom: 20px;
-}
-
-#Sceptile {
-    background-color: #81b485;
-    margin-top: 13px;
-    padding: 20px 20px 10px 20px;
-    overflow: auto;
-}
-
-#Kadabra {
-    background-color: #cdb865;
-    padding: 10px 20px 10px 100px;
-    overflow: auto;
-}
-
-#Hoopa {
-    background-color: #928b98;
-    padding: 10px 20px;
-    overflow: auto;
-}
-
-#Greninja {
-    background-color: #7abfe2;
-    padding: 10px 20px 10px 100px;
-    overflow: auto;
-}
-
-#Sceptile,
-#Kadabra,
-#Hoopa,
-#Greninja {
-    font-size: 20px;
-}
-
-#Sceptile h2,
-#Kadabra h2,
-#Hoopa h2,
+#Sceptile h2, 
+#Kadabra h2, 
+#Hoopa h2, 
 #Greninja h2 {
-    margin-top: 30px;
-    transition: all 0.3s ease;
+    margin: 0;
+    font-size: 38px; 
     font-family: "Bree Serif", serif;
     font-weight: 400;
-    font-style: normal;
+    display: inline-block; 
+    transition: all 0.3s ease; 
 }
 
 #Sceptile h2:hover,
@@ -562,47 +559,68 @@ a:hover{
     transform: translateX(8px);
 }
 
-#Sceptile ul,
-#Kadabra ul,
-#Hoopa ul,
+#Sceptile ul, 
+#Kadabra ul, 
+#Hoopa ul, 
 #Greninja ul {
-    margin-top: 10px;
+    margin: 0; 
+    padding-left: 20px;
 }
 
-#imgSceptile:hover,
-#imgKadabra:hover,
-#imgHoopa:hover,
-#imgGreninja:hover,
-#initial-new img:hover,
-#pikachu img:hover {    
+#imgSceptile:hover, 
+#imgKadabra:hover, 
+#imgHoopa:hover, 
+#imgGreninja:hover {    
     transform: scale(1.1);
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
-} /*Usado para imagens da página de iniciais também!*/
-
-#Sceptile h2:hover {
-    color: #1f6b2a;
-    text-shadow: 0 0 5px rgba(31, 107, 42, 0.3);
 }
 
-#Kadabra h2:hover {
-    color: #896300;
-    text-shadow: 0 0 5px rgba(184, 134, 11, 0.3);
-}
+#Sceptile h2:hover { color: #1f6b2a; text-shadow: 0 0 5px rgba(31, 107, 42, 0.3); }
+#Kadabra h2:hover  { color: #896300; text-shadow: 0 0 5px rgba(184, 134, 11, 0.3); }
+#Hoopa h2:hover    { color: #6a0dad; text-shadow: 0 0 5px rgba(106, 13, 173, 0.3); }
+#Greninja h2:hover { color: #0057b8; text-shadow: 0 0 5px rgba(0, 87, 184, 0.3); }
 
-#Hoopa h2:hover {
-    color: #6a0dad;
-    text-shadow: 0 0 5px rgba(106, 13, 173, 0.3);
-}
+@media (max-width: 1000px) {
+    #Sceptile, #Kadabra, #Hoopa, #Greninja {
+        display: flex; 
+        flex-direction: column !important;
+        text-align: center;
+        padding: 30px 20px; 
+        gap: 15px; 
+    }
 
-#Greninja h2:hover {
-    color: #0057b8;
-    text-shadow: 0 0 5px rgba(0, 87, 184, 0.3);
-}
+    #imgSceptile, 
+    #imgKadabra, 
+    #imgHoopa, 
+    #imgGreninja {
+        width: 290px; 
+        margin: 0 auto;
+    }
 
-#principal h2:hover, li{
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    font-style: normal;
+    #Sceptile h2, 
+    #Kadabra h2, 
+    #Hoopa h2, 
+    #Greninja h2 {
+        text-align: center;
+        width: 100%;
+        font-size: 34px;
+    }
+
+    #Sceptile h2:hover, 
+    #Kadabra h2:hover, 
+    #Hoopa h2:hover, 
+    #Greninja h2:hover {
+        transform: none;
+    }
+
+    #Sceptile ul, 
+    #Kadabra ul, 
+    #Hoopa ul, 
+    #Greninja ul {
+        display: table; 
+        margin: 0 auto;
+        text-align: left;
+    }
 }
 
 /*Informações*/
