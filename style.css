@@ -626,7 +626,7 @@ a:hover{
 /*Informações*/
 
 #informations {
-    padding-top: 8%;
+    padding-top: 90px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3%;
