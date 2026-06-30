@@ -305,7 +305,7 @@ a:hover{
 /*Iniciais*/
 
 #initial-new {
-        padding-top: 50px;
+        padding-top: 60px;
 }
 
 #initials-title {
@@ -316,12 +316,12 @@ a:hover{
 
 @media (max-width: 1500px) {
     #initial-new {
-        padding-top: calc(6.77vh + 20px);
+        padding-top: 63px;
     }
 }
 @media (max-width: 1250px) {
     #initial-new {
-        padding-top: calc(8.3vh + 20px);
+        padding-top: 63px;
     }
 }
 
