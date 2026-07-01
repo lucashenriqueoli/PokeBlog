@@ -400,6 +400,7 @@ a:hover{
 #pikachu h2 {
     color: rgb(167, 5, 5);
     text-align: center;
+    font-family: "Unbounded", sans-serif;
 }
 
 #pikachu h1 {
@@ -420,10 +421,18 @@ a:hover{
     }
 }
 
+#initials h2, h1{
+    font-family: "Unbounded", sans-serif;
+}
+
 #initials h1, h2, p {
     font-family: "Viga", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+#pikachu h2, h1{
+    font-family: "Unbounded", sans-serif;
 }
 
 #pikachu h1, h2, p {
@@ -454,19 +463,21 @@ a:hover{
     margin-top: 5%;
     text-align: center;
     color: #7a0c1f;
-    font-family: Arial, sans-serif;
     position: relative;
+    font-family: "Unbounded", sans-serif;
 }
 
 #textos_fatos {
     margin-right: 20%;
     margin-left: 20%;
+    font-family: "Viga", sans-serif;
 }
 
 @media (max-width: 900px) {
     #textos_fatos {
         margin-right: 10%;
         margin-left: 10%;
+        font-family: "Viga", sans-serif;
     }
 }
 
@@ -474,6 +485,7 @@ a:hover{
     iframe {
         max-width: 100%;
         height: 250px;
+        font-family: "Viga", sans-serif;
     }
 }
 
@@ -565,15 +577,13 @@ a:hover{
 #Greninja ul {
     margin: 0; 
     padding-left: 20px;
+    font-family: "Viga", sans-serif;
 }
 
 #imgSceptile:hover, 
 #imgKadabra:hover, 
 #imgHoopa:hover, 
-#imgGreninja:hover,
-#tipoFogo:hover,
-#tipoPlanta:hover,
-#tipoAgua:hover {    
+#imgGreninja:hover {    
     transform: scale(1.1);
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
 }
@@ -623,6 +633,7 @@ a:hover{
         display: table; 
         margin: 0 auto;
         text-align: left;
+        font-family: "Viga", sans-serif;
     }
 }
 
@@ -655,6 +666,7 @@ a:hover{
 }
 #autors h2 {
     color: #0b4f69;
+    font-family: "Unbounded", sans-serif;
 }
 
 #credits {
@@ -662,6 +674,7 @@ a:hover{
 }
 #credits h2 {
     color: rgb(172, 1, 1);
+    font-family: "Unbounded", sans-serif;
 }
 
 /*Script*/
