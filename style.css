@@ -640,6 +640,66 @@ a:hover{
     }
 }
 
+#glossario {
+    background-color: #f4f4f9;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+#glossario h2 {
+    margin: 0 0 30px 0;
+    font-size: 38px; 
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    color: #333;
+}
+
+#glossario dl {
+    font-family: "Viga", sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0;
+}
+
+#glossario dt {
+    font-weight: bold;
+    color: #1f6b2a; 
+    font-size: 26px;
+    margin-top: 25px;
+}
+
+#glossario dt::before {
+    content: "◈ "; 
+    font-size: 20px;
+}
+
+#glossario dd {
+    margin: 8px 0 0 25px;
+    color: #444;
+}
+
+@media (max-width: 1000px) {
+    #glossario {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    #glossario h2 {
+        font-size: 34px;
+    }
+
+    #glossario dl {
+        text-align: left;
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    #glossario dt {
+        font-size: 22px;
+    }
+}
+
 /*Informações*/
 
 #informations {
