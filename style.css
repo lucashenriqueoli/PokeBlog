@@ -751,6 +751,12 @@ a:hover{
     }
 }
 
+#autors h3 {
+    font-family: "Geist Pixel", sans-serif;
+    font-weight: 600;
+    color: #3700ff;
+}
+
 /*Script*/
 
 #pokemon {
