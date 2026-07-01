@@ -567,7 +567,10 @@ a:hover{
 #Sceptile h2:hover,
 #Kadabra h2:hover,
 #Hoopa h2:hover,
-#Greninja h2:hover {
+#Greninja h2:hover,
+#tipoFogo:hover,
+#tipoPlanta:hover,
+#tipoAgua:hover {
     transform: translateX(8px);
 }
 
