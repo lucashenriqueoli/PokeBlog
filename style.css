@@ -570,7 +570,10 @@ a:hover{
 #imgSceptile:hover, 
 #imgKadabra:hover, 
 #imgHoopa:hover, 
-#imgGreninja:hover {    
+#imgGreninja:hover,
+#tipoFogo:hover,
+#tipoPlanta:hover,
+#tipoAgua:hover {    
     transform: scale(1.1);
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
 }
